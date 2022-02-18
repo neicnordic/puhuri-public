@@ -1,0 +1,22 @@
+<nav class="header-navbar-menu">
+    <div class="header-navbar-bg"></div>
+    <button type="button" class="navbar-back"><img src="{{'/assets/images/left-arrow.svg' | relative_url}}" alt="title"></button>
+    <button type="button" class="header-cancel"><img src="{{'/assets/images/header-cancel.svg' | relative_url}}" alt="title"></button>
+    <div class="header-navbar-container">
+        <div class="header-navbar-left">
+            <ul class="nav-list list-inline">
+                {% for link in site.data.navigation %}
+                <li {% if link.submenu %} class="sub-dropdown" {% endif %}><a href="{{link.url}}">{{link.text}}</a>
+                    {% if link.submenu %} 
+                    <ul class="sub-list list-inline">
+                        {% for sublink in link.submenu %}
+                        <li><a href="{{sublink.url}}">{{sublink.text}}</a></li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

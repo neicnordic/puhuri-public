@@ -1,0 +1,33 @@
+<section class="service-area pt-10 pt-lg-15">
+    <div class="container">
+      <div class="section-title text-center mb-4 mb-lg-8">
+        <span class="badge mb-2">WHAT WE DO</span>
+        <h2 class="display-3 mb-2">Our Services</h2>
+        <p>Would field and people. For you was make offers refinement all I time, with worries</p>
+      </div>
+      <div class="row">
+        {% for service in site.services limit:6 %}
+            <div class="col-md-6 col-lg-4">
+                <div class="service-box mb-4 mb-lg-7" data-aos="fade-up">
+                    <div class="service-icon"><img src="{{service.icon | relative_url}}" alt="title"></div>
+                    <div class="service-content">
+                        <h4 class="mb-4">{{service.title}}</h4>
+                        {% if service.description %}
+                        <p class="mb-4">{{service.description}}</p>
+                        <a href="{{service.url | relative_url}}" class="read-more">Read More</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+      </div>
+      <div class="row">
+        <div class="col-md-10 m-auto">
+          <div class="service-badge shadow-sm bg-primary border-5 border-start border-primary p-3 mt-4">
+            <p class="m-0">Are you worried about to manage your financial credit, feel free to <a href="{{'/contact' | relative_url}}"
+                class="text-primary"><u>contact us</u></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

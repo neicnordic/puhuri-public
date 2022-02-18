@@ -1,0 +1,101 @@
+---
+layout: default
+home: 2
+permalink: /home-02
+---
+
+{% include header.html %}
+{% include navigation.html %}
+
+<section class="hero-area hero-top-sp2 hero-shape-2 position-relative">
+  <div class="hero-icon-shape">
+    <div class="hero-shape-item shape-5">
+      <img src="{{'/assets/images/hero-icon2.svg' | relative_url}}" alt="title">
+    </div>
+    <div class="hero-shape-item shape-6">
+      <img src="{{'/assets/images/hero-icon4.svg' | relative_url}}" alt="title">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 col-xl-4 offset-xl-1 order-lg-1">
+        <div class="contact-form bg-white m-lg-start m-auto mb-4" data-aos="fade-right">
+          <div class="text-center">
+            <h3 class="mb-2">Get A Free Quote</h3>
+            <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <form action="https://formspree.io/akash@themeix.com" method="POST" >
+            <div class="row">
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <input type="text" name="name" class="form-control" placeholder="Name..">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <input type="email" name="email" class="form-control" placeholder="Email">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <textarea class="form-control" name ="message" rows="4" placeholder="Message"></textarea>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-danger w-100">GET A FREE QUOTE</button>
+          </form>
+          <svg class="drawing-direct2" width="260" height="48" viewBox="0 0 260 48" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M259.495 11.867C259.664 11.056 259.143 10.2616 258.332 10.0928L245.115 7.34132C244.304 7.17248 243.51 7.69308 243.341 8.50412C243.172 9.31516 243.693 10.1095 244.504 10.2784L256.252 12.7241L253.806 24.4722C253.638 25.2832 254.158 26.0776 254.969 26.2464C255.78 26.4153 256.575 25.8947 256.743 25.0836L259.495 11.867ZM2.90838 0.350046C2.23732 -0.135726 1.29954 0.0144762 0.813751 0.685533C0.327993 1.35659 0.478186 2.29438 1.14924 2.78016L2.90838 0.350046ZM257.204 10.3067C215.146 37.8711 105.339 74.4986 2.90838 0.350046L1.14924 2.78016C104.94 77.9136 216.168 40.7882 258.849 12.8159L257.204 10.3067Z" />
+          </svg>
+
+        </div>
+      </div>
+      <div class="col-lg-7 col-xl-7 order-lg-12">
+        <div class="hero-content text-center text-lg-start me-ms-4 me-xl-12" data-aos="fade-up">
+          <span class="badge mb-3">#1 FINANCE RIASK MANAGEMENT</span>
+          <h2 class="display-1 mb-4">We Provide <span class="text-danger">Digital & Finance</span> Solutions</h2>
+          <p class="fs-5 m-0">We are based in Canada. This means that our customers can expect prompt, local support
+            from a dedicated customer care team.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include counter_section.html %}
+{% include about_section3.html %}
+{% include service_section2.html %}
+
+<section class="about-area section-shape-2 position-relative py-8 py-lg-12 mt-10 mt-lg-15">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 offset-lg-1 order-lg-1">
+        <div class="about-right-image"><img data-aos="fade-right"
+            src="{{'/assets/images/about/about-image4.jpg' | relative_url}}" alt="title"></div>
+      </div>
+      <div class="col-lg-6 order-lg-12">
+        <div class="section-title mb-4">
+          <span class="badge mb-2">INNOVATION IDEA</span>
+          <h2 class="display-3 mb-4">Few clicks to start a business!</h2>
+          <p>Is suppliers, of their academic was bread rationale and had chooses we is same and this acting
+            disciplined instantly </p>
+        </div>
+        <ul class="about-list list-inline mb-4">
+          <li><span><img src="{{'/assets/images/about/1.svg' | relative_url}}" alt="title"></span>Secure Money</li>
+          <li><span><img src="{{'/assets/images/about/2.svg' | relative_url}}" alt="title"></span>Trending Report</li>
+          <li><span><img src="{{'/assets/images/about/3.svg' | relative_url}}" alt="title"></span>Flawless Credit</li>
+          <li><span><img src="{{'/assets/images/about/4.svg' | relative_url}}" alt="title"></span>Correct Analysis</li>
+        </ul>
+        <a href="forms.google.com" class="btn btn-primary">REQUEST FREE DEMO</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include call-to-action.html %}
+{% include team_section.html %}
+{% include blog_section.html %}
+{% include company_section.html %}
+{% include footer.html %}

@@ -1,0 +1,257 @@
+@keyframes bounce-2 {
+    0%   { transform: translate(-600px, 0px); }
+    100% { transform: translate(-600px, -30px); } 
+}
+@keyframes bounce-3 {
+    0%   { transform: translate(600px, 0px); }
+    100% { transform: translate(600px, -30px); } 
+}
+@keyframes bounce-4 {
+    0%   { transform: translate(160px, 0px); }
+    100% { transform: translate(160px, 30px); } 
+} 
+.section-shape-1{
+    overflow-x: hidden; 
+    &::before{ 
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #F2FBFA; 
+        border-top-right-radius: $border-radius; 
+        border-bottom-right-radius: $border-radius; 
+        width: 50vmax;
+        height: 100%;
+        display: block;
+        transform: translate(-540px, 0px); 
+        z-index: -1;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 75px; 
+        left:50vmax; 
+        background-image: url(../images/section-shape-1-dots.png);
+        background-repeat: no-repeat; 
+        background-size: contain;
+        width: 101px;
+        height: 75px;
+        display: block;
+        transform: translate(-600px, 0px); 
+        z-index: 1;  
+        -webkit-animation-name: bounce-2; 
+        animation-name: bounce-2; 
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        animation-play-state: running;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+}
+
+.section-shape-2{
+    overflow-x: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #F2FBFA; 
+        border-top-left-radius: $border-radius; 
+        border-bottom-left-radius: $border-radius;  
+        width: 50vmax;
+        height: 100%;
+        display: block;
+        transform: translate(540px, 0px); 
+        z-index: -1;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 75px; 
+        right:50vmax; 
+        background-image: url(../images/section-shape-1-dots.png);
+        background-repeat: no-repeat; 
+        background-size: contain;
+        width: 101px;
+        height: 75px;
+        display: block;
+        transform: translate(600px, 0px); 
+        z-index: 1;  
+        -webkit-animation-name: bounce-3; 
+        animation-name: bounce-3; 
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        animation-play-state: running;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+}
+
+.section-shape-3{
+    overflow-x: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #FFF8F8; 
+        border-top-right-radius: $border-radius; 
+        border-bottom-right-radius: $border-radius;  
+        width: 50vmax;
+        height: 100%;
+        display: block;
+        transform: translate(-540px, 0px); 
+        z-index: -1;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 75px; 
+        left:50vmax; 
+        background-image: url(../images/section-shape-3-dots.png);
+        background-repeat: no-repeat; 
+        background-size: contain;
+        width: 101px;
+        height: 75px;
+        display: block;
+        transform: translate(-600px, 0px); 
+        z-index: 1; 
+        -webkit-animation-name: bounce-2; 
+        animation-name: bounce-2; 
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        animation-play-state: running;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s; 
+    }
+}
+
+.section-shape-4{
+    overflow-x: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #FEFAF4; 
+        border-top-left-radius: $border-radius; 
+        border-bottom-left-radius: $border-radius;  
+        width: 50vmax;
+        height: 100%;
+        display: block;
+        transform: translate(100px, 0px); 
+        z-index: -1;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 35px; 
+        right:50vmax; 
+        background-image: url(../images/section-shape-2-dots.png);
+        background-repeat: no-repeat; 
+        background-size: contain;
+        width: 101px;
+        height: 75px;
+        display: block;
+        transform: translate(160px, 0px); 
+        z-index: 1; 
+        -webkit-animation-name: bounce-4; 
+        animation-name: bounce-4; 
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+        animation-play-state: running;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s; 
+    }
+}
+.service-box{
+    display:flex;
+    .service-icon{ 
+        display: block;
+        text-align: center;
+        padding: 18px;  
+        width: 75px;
+        height: 75px;
+        border: 3px solid $border-color;
+        border-radius: $border-radius-lg;
+        box-shadow: $box-shadow; 
+        background-color: var(--bs-white); 
+        transition: box-shadow 500ms,transform 500ms,border 500ms;  
+    }
+    .service-content{ 
+       width: calc(100% - 75px);
+       padding-left: 24px; 
+    }
+    &:hover{
+        .service-icon{
+             box-shadow: $box-shadow-lg; 
+             border-color: rgba($primary, 0.2);   
+        }
+    }
+}
+.service-badge{
+    &.bg-primary{
+        background-color: rgba($primary, 0.05)!important; 
+    }
+    &.bg-info{
+        background-color: rgba($info, 0.05)!important; 
+    }
+    &.bg-success{
+        background-color: rgba($success, 0.05)!important; 
+    }
+    &.bg-warning{
+        background-color: rgba($warning, 0.05)!important; 
+    }
+    &.bg-danger{
+        background-color: rgba($danger, 0.05)!important; 
+    }
+    &.bg-dark{
+        background-color: rgba($dark, 0.05)!important; 
+    } 
+}
+.read-more { 
+    display: inline-block; 
+    color: var(--bs-secondary); 
+    font-weight: $font-weight-bold;
+    &:after {
+      content: url(../images/read-more-arrow.svg); 
+      margin-left: 16px;
+      position: relative;
+      top: 1px;   
+      transition: margin 500ms;  
+    }
+    &:hover{
+      &::after{
+        margin-left: 24px;  
+      }
+    }
+  }

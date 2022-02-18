@@ -1,0 +1,94 @@
+/*
+==========================================
+    Normalize Css
+==========================================
+*/
+html {
+  scroll-behavior: smooth;
+}
+body{
+  counter-reset: my-sec-counter;  
+  color: var(--bs-secondary); 
+}
+body::-webkit-scrollbar {
+    width: .8rem;
+}
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+    border-radius: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--bs-primary);
+    border-radius: 0;
+    color:var(--bs-light);
+}
+body::-moz-selection { 
+  background-color: var(--bs-primary);
+  color:var(--bs-light);
+}
+
+body::selection {
+  background-color: var(--bs-primary);
+  color:var(--bs-light);
+}
+h1 a,h2 a,h3 a, h4 a, h5 a, h6 a{
+   transition: $transition-base; 
+   color: var(--bs-dark);
+   &:hover{
+     color: var(--bs-primary);  
+   }
+} 
+.input-group>.form-control:focus, 
+.input-group>.form-select:focus {
+    z-index: 1;
+}
+iframe{
+  width: 100%; 
+}
+.form-control,.custom-select {
+      height: auto; 
+  &:focus,&:active,&:hover{
+     z-index: 2; 
+  }
+}  
+.table>:not(:last-child)>:last-child>* {
+  border-bottom-color: $input-border-color;
+}
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger{
+  color:var(--bs-white)!important; 
+} 
+.btn {
+  overflow: hidden;
+  position: relative; 
+  &::after{
+    background-color: var(--bs-white);    
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    width: 50px;
+    -webkit-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+    z-index: 1; 
+  }
+  &:hover,&:focus { 
+     &::after{
+      left: 120%; 
+     }
+  }
+}
+.badge{
+  background-color:$levert-badge-bg;   
+}
+ 

@@ -1,0 +1,12 @@
+ - name: University of Tartu
+   img_src: /assets/images/company/ut.svg
+ - name: CSC
+   img_src: /assets/images/company/csc.png
+ - name: EuroHPC
+   img_src: /assets/images/company/eurohpc.jpg
+ - name: CSCS
+   img_src: /assets/images/company/cscs.svg
+ - name: DeiC
+   img_src: /assets/images/company/deic.svg
+ - name: Sigma2
+   img_src: /assets/images/company/sigma2.png

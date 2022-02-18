@@ -1,0 +1,19 @@
+<section class="blog-area pt-10 pt-lg-15 pb-10 pb-lg-13">
+    <div class="container">
+        <div class="section-title mb-4 mb-lg-7">
+            <span class="badge mb-2">OUR BLOG</span>
+            <h2 class="display-3 mb-2">Explore Blog </h2>
+            <p style="max-width: 680px;">Would field and people. For you was make offers refinement all I time, with
+                worries
+                burden emerge just the of deeply a in chosen language seven mountains it allow a for or studies </p>
+        </div>
+        <div class="row">
+            {% for post in site.posts  limit:3 %}
+                <div class="col-md-6 col-lg-4">
+                    {% include post_card.html %}
+                </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</section>

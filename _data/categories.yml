@@ -1,0 +1,24 @@
+- name: Travel
+  slug: travel
+  description: Of future represent pleasures and to would to a show enough beacon hung all with my it or was of from mathematicians does was.
+  image: /assets/image/blog-img-1.jpg
+
+- name: Lifestyle
+  slug: lifestyle
+  description: Of future represent pleasures and to would to a show enough beacon hung all with my it or was of from mathematicians does was.
+  image: /assets/image/blog-img-4.jpg
+
+- name: Video
+  slug: video
+  description: Might the puzzles it's is which hazardous rank the different own away. Front had sick at plan be to of probably of allpowerful.
+  image: /assets/image/blog-img-5.jpg
+
+- name: Trending
+  slug: trending
+  description: Broader in was five anyone prepared drawers. Performed the one clues with chooses river curse it kind and over that is excessive present
+  image: /assets/image/blog-img-3.jpg
+
+- name: Friendship
+  slug: friendship
+  description: Broader in was five anyone prepared drawers. Performed the one clues with chooses river curse it kind and over that is excessive present
+  image: /assets/image/blog-img-2.jpg

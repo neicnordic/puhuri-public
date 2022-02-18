@@ -1,0 +1,15 @@
+<section class="hero-area hero-top-sp2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="hero-content me-ms-4 me-xl-12">
+                    <span class="badge mb-3"><a href="{{'/' | relative_url}}">HOME</a> / {{page.title | upcase }}</span>
+                    <h2 class="display-1 mb-4">{{page.title}}</h2>
+                    {% if page.description %}
+                    <p class="fs-5 m-0">{{page.description}}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

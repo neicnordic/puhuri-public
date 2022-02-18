@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{% include header.html %}
+{% include navigation.html %}
+
+<main class="hero-shape-3 position-relative">
+  
+    {% include lt_page_title.html %}
+  <section class="blog-area pt-10 pb-10 pt-lg-15">
+    <div class="container">
+      <div class="row infinite-scroll">
+        {% assign i  = 0 %}
+        {% for post in paginator.posts  %}
+            {% assign i = i | plus:1 %} 
+            <div class="col-md-6 {% if i < 4 %}col-lg-4 {% endif %} post-item">
+                {% include post_card.html %}
+            </div>
+            {% if i == 5 %}
+                {% assign i = 0 %}
+            {% endif %}
+        {% endfor %}
+        
+      </div>
+      {% include pagination.html %}
+      
+    </div>
+  </section>
+  <!--  ====================== Blog Section End =============================  -->
+
+
+</main>
+
+{% include call-out-action.html %}
+{% include footer.html %}

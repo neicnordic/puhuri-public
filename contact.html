@@ -1,0 +1,55 @@
+---
+layout: default
+title: Contact us
+description: 
+permalink: /contact
+---
+
+{% include header.html %}
+{% include navigation.html %}
+
+<main class="hero-shape-3 position-relative">
+  {% include lt_page_title.html %}
+  <section class="blog-area py-10 py-lg-15">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offset-xl-1 order-lg-1">
+          <div class="contact-form bg-white mb-4 mb-lg-0" data-aos="fade-left">
+
+            <form action="https://formspree.io/f/xoqrdlor" method="POST">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Name..">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input type="email" namme="email" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <textarea name="message" class="form-control" rows="4" placeholder="Message"></textarea>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-danger w-100">Send the message</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-7 order-lg-12">
+          <h5 class="mb-2">Contact us</h5>
+          <ul class="list-inline m-0">
+            <li class="mb-1"><span class="me-1"><img src="{{'/assets/images/phone2.svg' | relative_url}}" alt="title"></span>+371 2940 2436</li>
+            <li><span class="me-1"><img src="{{'/assets/images/message2.svg' | relative_url}}" alt="title"></span> puhuri@puhuri.io</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  ====================== Blog Section End =============================  -->
+</main>
+<!--  ====================== Blog Start =============================  -->
+
+{% include footer.html %}

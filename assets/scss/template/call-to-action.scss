@@ -1,0 +1,47 @@
+.call-to-action-area{ 
+    overflow: hidden;
+    &.bg-primary{
+        background-color: rgba($primary, 0.05)!important; 
+    }
+    &.bg-info{
+        background-color: rgba($info, 0.05)!important; 
+    }
+    &.bg-success{
+        background-color: rgba($success, 0.05)!important; 
+    }
+    &.bg-warning{
+        background-color: rgba($warning, 0.05)!important; 
+    }
+    &.bg-danger{
+        background-color: rgba($danger, 0.05)!important; 
+    }
+    &.bg-dark{
+        background-color: rgba($dark, 0.05)!important; 
+    } 
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -80px;
+        background-image: url(../images/map-image.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 590px;
+        height: 440px; 
+    }
+}
+.call-to-action-content{
+    position: relative;
+    z-index: 2;
+}
+.call-to-action-area{
+    .tsparticles-canvas-el{ 
+        position: absolute!important;
+        width: 850px!important;
+        height: 674px!important;
+        top: auto!important;
+        bottom: -75px!important;
+        right: 6px!important;
+        left: auto!important; 
+    }
+}

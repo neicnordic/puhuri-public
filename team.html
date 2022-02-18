@@ -1,0 +1,59 @@
+---
+layout: default
+title: OUR TEAM
+description: We strive to create a culture in which our employees develop through experiences, coaching and training to become a high-performance team.
+permalink: /team
+---
+
+{% include header.html %}
+{% include navigation.html %}
+
+<main class="hero-shape-3 position-relative">
+
+  {% include lt_page_title.html %}
+  <section class="team-area py-10 py-lg-15">
+    <div class="container">
+      <div class="row">
+        {% for member in site.data.team_members %}
+        <div class="col-md-6 col-lg-4">
+          <div class="team-box mt-3">
+            <div class="team-image">
+              <img src="{{member.img_src | relative_url}}" alt="{{member.name}}">
+            </div>
+            <div class="team-content text-center">
+              <h5>{{member.name}}</h5>
+              <p>{{member.designation}}</p>
+
+              <ul class="share-social list-inline m-0">
+                {% for social in member.social %}
+                <li class="list-inline-item">
+                  <a href="{{social.url | relative_url }}" rel="noopener" target="_blank">
+                    <img src="{{social.icon | relative_url}}" alt="">
+                  </a>
+                </li>
+                {% endfor %}
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!--  ====================== Team Section End =============================  -->
+</main>
+<section class="call-to-action-area2 position-relative">
+  <div class="container">
+    <div class="call-to-action-content text-center aos-init aos-animate" data-aos="fade-up">
+      <h2 class="display-3">Are you ready for a competitive edge?</h2>
+      <p class="my-3">Whenever every at conduct, proposal. You variety have way origin that had any people</p>
+      <div>
+        <a href="forms.google.com" class="btn btn-primary me-2 mb-2">SIGN UP TODAY</a>
+        <a href="/service" class="btn btn-outline-danger mb-2">VIEW SERVICES</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% include call-to-action2.html %}
+{% include footer.html %}

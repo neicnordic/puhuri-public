@@ -1,0 +1,50 @@
+---
+layout: default
+pagination:
+    enabled: true
+---
+
+<!-- {% assign page_title = page.title %}
+{% assign cat = page_title | capitalize %}
+{% assign posts = site.posts | where: "categories", cat  %} -->
+
+{% include header.html %}
+{% include navigation.html %}
+
+<main class="hero-shape-3 position-relative">
+  <section class="hero-area hero-top-sp2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="hero-content me-ms-4 me-xl-12">
+            <span class="badge mb-3"><a href="{{'/' | relative_url }}">HOME</a> / CATEGORY</span>
+            <h2 class="display-1 mb-4">Tag - {{page.title}}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="blog-area pt-10 pb-10 pt-lg-15">
+    <div class="container">
+      <div class="row">
+        {% assign i  = 0 %}
+        {% for post in paginator.posts  %}
+            {% assign i = i | plus:1 %} 
+            <div class="col-md-6 {% if i < 4 %}col-lg-4 {% endif %}">
+                {% include post_card.html %}
+            </div>
+            {% if i == 5 %}
+                {% assign i = 0 %}
+            {% endif %}
+        {% endfor %}
+      </div>
+
+      {% include pagination.html %}
+      
+    </div>
+  </section>
+</main>
+
+{% include call-out-action.html %}
+{% include footer.html %}

@@ -1,0 +1,14 @@
+<!-- data-aos="fade" -->
+<div class="blog-style mb-3" > 
+    <div class="blog-image">
+        <img src="{{post.post_image}}" alt="{{post.title}}">
+    </div>
+    <div class="blog-content">
+        <div class="author-info"><img src="{{post.post_image | relative_url}}" alt="{{post.title}}">
+            <a href="{{'/author/' | relative_url}}{{post.author_name | slugify}}"
+                class="small text-white">{{post.author_name}}</a>
+        </div>
+        <h4 class="my-3"><a class="hover-title text-white" href="{{post.url | relative_url}}">{{post.title}}</a></h4>
+        <a href="{{post.url | relative_url}}" class="read-more">Read More</a>
+    </div>
+</div>

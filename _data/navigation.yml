@@ -1,0 +1,8 @@
+- text: Blog
+  url: /blog
+- text: About
+  url: /about
+- text: Contact
+  url: /contact
+- text: Demo
+  url: https://puhuri-portal-demo.neic.no

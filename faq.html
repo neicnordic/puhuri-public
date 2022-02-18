@@ -1,0 +1,54 @@
+---
+layout: default
+title: FAQ
+description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry standard dummy text ever since the 1500s
+permalink: /faq
+---
+
+{% include header.html %}
+{% include navigation.html %}
+
+<main class="hero-shape-3 position-relative">
+  {% include lt_page_title.html %}
+
+  <div class="section faq-area pt-7 pt-lg-9">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="faq-accordion accordion" id="accordion">
+            {% for faq in site.data.faqs %}
+              {% if forloop.index == 1 %}
+                <div class="accordion-item">
+                  <p class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{forloop.index}}"
+                      aria-expanded="true">{{faq.question}}</button>
+                  </p>
+                  <div id="collapse-{{forloop.index}}" class="accordion-collapse collapse show" data-bs-parent="#accordion" >
+                    <div class="accordion-body">{{faq.answer}}</div>
+                  </div>
+                </div>
+              {% else %}
+                <div class="accordion-item">
+                  <p class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-{{forloop.index}}" aria-expanded="false">{{faq.question}}</button>
+                  </p>
+                  <div id="collapse-{{forloop.index}}" class="accordion-collapse collapse" data-bs-parent="#accordion" >
+                    <div class="accordion-body">{{faq.answer}}</div>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</main>
+
+{% include call-to-action3.html %}
+{% include call-to-action2.html %}
+{% include footer.html %}

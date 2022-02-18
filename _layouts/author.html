@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+{% assign author_posts = site.posts | where: 'author_id', page.author_id %}
+
+{% include header.html %}
+{% include navigation.html %}
+
+
+<main class="hero-shape-3 position-relative">
+  <!--  ====================== Hero Section Start =============================  -->
+  <section class="hero-area hero-top-sp2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="hero-content me-ms-4 me-xl-12">
+            <span class="badge mb-3"><a href="{{'/' | relative_url}}">HOME</a> / AUTHOR</span>
+            
+            <h2 class="display-1 mb-4">{{page.name}}</h2>
+
+              {% if page.bio %}
+                <p class="fs-5 m-0">{{page.bio}} </p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  ====================== Hero Section End =============================  -->
+  <!--  ====================== Blog Section Start =============================  -->
+  <section class="blog-area pt-10 pt-lg-15">
+    <div class="container">
+      <div class="row">
+
+        {% assign i  = 0 %}
+        {% for post in author_posts  %}
+            {% assign i = i | plus:1 %} 
+            <div class="col-md-6 {% if i < 4 %}col-lg-4 {% endif %}">
+                {% include post_card.html %}
+            </div>
+            {% if i == 5 %}
+                {% assign i = 0 %}
+            {% endif %}
+        {% endfor %}
+      </div>
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-primary load-more-btn">LOAD MORE POSTS</a>
+      </div>
+    </div>
+  </section>
+  <!--  ====================== Blog Section End =============================  -->
+
+
+</main>
+
+{% include call-out-action.html %}
+{% include footer.html %}

@@ -1,0 +1,46 @@
+<section class="testimonial-area section-shape-4 position-relative py-8 py-lg-12 mt-9 mt-lg-15">
+    
+    <div class="container">
+        <div class="testimonial-wrapper">
+            <div class="section-title my-3">
+                <span class="badge mb-2">TESTIMONIAL</span>
+                <h2 class="display-3 mb-2">Recent Feedback </h2>
+                <p>Trusted by more than 700 people</p>
+            </div>
+            <div class="testimonial-arrow">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="testimonial-container">
+        <div class="swiper-container testimonial-slider">
+            <div class="swiper-wrapper">
+                {% for testimonial in site.data.testimonials %}
+                    <div class="swiper-slide">
+                        <div class="testimonial-box" data-aos="fade-up">
+                            <div class="author-info mb-3">
+                                <img src="{{testimonial.img_src | relative_url}}" alt="{{testimonial.name}}">
+                                <div class="author-content">
+                                    <h4 class="m-0">{{testimonial.name}}</h4>
+                                    <span class="small">{{testimonial.designation}}</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>{{testimonial.comment}}</p>
+                                <div class="review-rating">
+                                    <img src="assets/images/review-start.svg" alt="title">
+                                    <img src="assets/images/review-start.svg" alt="title">
+                                    <img src="assets/images/review-start.svg" alt="title">
+                                    <img src="assets/images/review-start.svg" alt="title">
+                                    <img src="assets/images/review-start.svg" alt="title">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
