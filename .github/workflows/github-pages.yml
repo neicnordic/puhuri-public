@@ -1,7 +1,7 @@
 name: Publish to GitHub Pages branch
 
 on:
-  push
+  push:
     branches:
       - master
 
