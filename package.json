@@ -33,6 +33,7 @@
     "masonry-layout": "^4.2.2",
     "pathseg": "^1.2.1",
     "prismjs": "^1.24.0",
+    "sass": "^1.49.9",
     "swiper": "^6.8.1",
     "tsparticles": "^1.34.0",
     "typography-fix": "^1.1.11",

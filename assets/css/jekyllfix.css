@@ -29,3 +29,9 @@ h5.search-post-title {
 .search-results:first-child {
     padding-top: 15px;
 }
+
+.header-navbar .navbar-brand img {
+  height: 60px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
