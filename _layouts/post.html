@@ -76,13 +76,6 @@ layout: default
                         </div>
                     </div>
 
-                    <div class="entry-author my-md-8 my-8">
-                        <img src="{{author.image | relative_url}}" alt="{{author.name}}">
-                        <div class="author-content">
-                            <h5><a href="{{author.url | relative_url}}">{{author.name}}</a></h5>
-                            <p class="m-0">{{author.designation}}</p>
-                        </div>
-                    </div>
 
                     <div class="row my-md-8 my-8">
                         <div class="col-md-6">
@@ -111,60 +104,12 @@ layout: default
                             {% endif %}
                         </div>
                     </div>
-                    <div class="my-md-8 my-8">
-                        {% include comments.html %}
-                    </div>
                 </div>
                 
-                <div class="col-md-5 col-lg-4">
-                    <div class="sidebar-widget mt-5 mt-md-0 mb-3" data-aos="fade-up">
-                        <h4 class="mb-3">Search </h4>
-                        <form class="sidebar-form" action="#"  method="get" >
-                            <div class="input-group">
-                                <input type="search" id="search-input" class="form-control" placeholder="Serch here...">
-                                <button class="btn btn-secondary" type="button"><img src="{{'/assets/images/search-icon.svg' | relative_url}}"
-                                        alt="title"></button>
-                            </div>
-                        </form>
-                        <div id="results-container">
-                        </div>
-                    </div>
-                    <div class="sidebar-widget mb-3" data-aos="fade-up">
-                        <h4 class="mb-3">Categories </h4>
-                        <ul class="sidebar-category list-group m-0">
-                            {% for category in site.categories %}
-                            <li class="list-group-item">
-                                <a href="{{'/category/' | relative_url}}{{category[0] | slugify}}"> {{category[0]}}<span class="category-post-count">{{category[0].size}}</span></a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    <div class="sidebar-widget mb-3" data-aos="fade-up">
-                        <h4 class="mb-2">Tags </h4>
-                        <ul class="sidebar-tag list-inline m-0">
-                            {% for tag in site.tags %}
-                            <li class="list-inline-item"><a href="{{'/tag/' | relative_url}}{{tag[0] | slugify}}">{{tag[0] | capitalize}}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    <div class="sidebar-widget mb-3" data-aos="fade-up">
-                        <h4 class="mb-1">Recent Posts </h4>
-                        <ul class="sidebar-blog list-group m-0">
-                            {% for post in site.posts limit:6 %}
-                            <li class="list-group-item">
-                                <p><a href="{{post.url | relative_url}}">{{post.title}}</a></p>
-                                <span class=" text-muted small">{{post.date | date: '%B %d, %Y'}}</span>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
     <!--  ====================== Blog Section End =============================  -->
 </main>
-
-{% include call-out-action.html %}
 
 {% include footer.html %}

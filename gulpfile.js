@@ -19,7 +19,6 @@
     './node_modules/prismjs/themes/prism.css',
     './node_modules/swiper/swiper-bundle.min.css',
     './node_modules/magnific-popup/dist/magnific-popup.css',
- 
     './assets/css/jekyllfix.css',
     ];
     var JS_Files = [
