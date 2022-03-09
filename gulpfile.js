@@ -19,6 +19,7 @@
     './node_modules/prismjs/themes/prism.css',
     './node_modules/swiper/swiper-bundle.min.css',
     './node_modules/magnific-popup/dist/magnific-popup.css',
+    './node_modules/vanilla-cookieconsent/dist/cookieconsent.css',
     './assets/css/jekyllfix.css',
     ];
     var JS_Files = [
@@ -36,6 +37,7 @@
     './node_modules/masonry-layout/dist/masonry.pkgd.min.js', 
     './node_modules/tsparticles/tsparticles.min.js',   
     './node_modules/jquery-particles/dist/jquery.particles.min.js',  
+    './node_modules/vanilla-cookieconsent/dist/cookieconsent.js',
     './node_modules/pathseg/pathseg.js',  
     './assets/js/infinite-scroll.pkgd.min.js',
     './assets/js/simple-jekyll-search.min.js',

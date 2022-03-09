@@ -37,6 +37,7 @@
     "swiper": "^6.8.1",
     "tsparticles": "^1.34.0",
     "typography-fix": "^1.1.11",
+    "vanilla-cookieconsent": "^2.8.0",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
