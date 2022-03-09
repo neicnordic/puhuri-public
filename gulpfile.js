@@ -29,8 +29,6 @@
     './node_modules/swiper/swiper-bundle.min.js',     
     './node_modules/aos/dist/aos.js',     
     './node_modules/prismjs/prism.js',
-    './node_modules/fitvids/dist/fitvids.min.js',
-    './node_modules/infinite-scroll/dist/infinite-scroll.pkgd.min.js',
     './node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
     './node_modules/waypoints/lib/jquery.waypoints.min.js',
     './node_modules/jquery.counterup/jquery.counterup.min.js', 
@@ -39,8 +37,6 @@
     './node_modules/jquery-particles/dist/jquery.particles.min.js',  
     './node_modules/vanilla-cookieconsent/dist/cookieconsent.js',
     './node_modules/pathseg/pathseg.js',  
-    './assets/js/infinite-scroll.pkgd.min.js',
-    './assets/js/simple-jekyll-search.min.js',
     './assets/js/app.js',  
     ];
     

@@ -103,7 +103,9 @@
       }
     }
   });
+
   /* Fitvids Js */
+  /*
   var cursor = $(".cursor-direction");
   $(document).mousemove(function (e) {
     cursor.css({
@@ -138,8 +140,9 @@
       transform: "scale(1)"
     });
   });
+  */
   /* Fitvids Js */
-  fitvids('.container');
+  // fitvids('.container');
   /*  Counterup  */
   
   
@@ -159,6 +162,7 @@
     anchorPlacement: 'top-center',
   });
   /*  Append Shop  */
+  /*
   $('.blog-append').infiniteScroll({
     path: function () {
       if (this.loadCount < 4) {
@@ -173,6 +177,7 @@
     status: '.page-load-status',
     history: false,
   });
+  */
   /*  current date show  */
   $('#spanYear').html(new Date().getFullYear());
   /*  Image-popup  */
@@ -1330,6 +1335,7 @@
   scrolltop();
 
 
+  /*
   $('.infinite-scroll').infiniteScroll({
     path: function path() {
       var pageNumber = this.loadCount + 2;
@@ -1339,15 +1345,16 @@
     button: '.loadmore',
     scrollThreshold: false
   });
-
+*/
   // search 
+/*
   var sjs = SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '/search.json',
     searchResultTemplate: '<div class="search-results"><a class="gh-search-item" href="{url}"><h5 class="search-post-title">{title}</h5></a>'
   });
-
+*/
 
 
 }(jQuery));
