@@ -1,27 +1,34 @@
 - name: Jarno Laitinen 
   designation: Head of Puhuri
-  img_src: /assets/images/team/jarno.jpg
+  img_src: /assets/images/team/jarno.webp
   social:
     - icon: '/assets/images/icons/linkedin.svg'
       url: https://www.linkedin.com/in/jarno-laitinen-1b67512/
 
 - name: Ahti Saar
   designation: Project Manager
-  img_src: /assets/images/team/ahti.jpg
+  img_src: /assets/images/team/ahti.webp
   social:
     - icon: '/assets/images/icons/linkedin.svg'
       url: https://www.linkedin.com/in/ahti-s-395a2967/
 
 - name: Yefim Gasel 
   designation: Business Development
-  img_src: /assets/images/team/yefim.jpg
+  img_src: /assets/images/team/yefim.webp
   social:
     - icon: '/assets/images/icons/linkedin.svg'
       url: https://www.linkedin.com/in/yefim-gasel/
 
 - name: Anders Sjöström 
   designation: Application expert
-  img_src: /assets/images/team/anders.jpg
+  img_src: /assets/images/team/anders.webp
   social:
     - icon: '/assets/images/icons/linkedin.svg'
       url: https://www.linkedin.com/in/anders-sj%C3%B6str%C3%B6m/
+
+- name: Anne Vomm Kime 
+  designation: Support coordinator
+  img_src: /assets/images/team/anne.webp
+  social:
+    - icon: '/assets/images/icons/linkedin.svg'
+      url: https://www.linkedin.com/in/annevomm/
