@@ -198,12 +198,12 @@
     .service-icon{ 
         display: block;
         text-align: center;
-        padding: 18px;  
+        padding: 5px;  
         width: 75px;
         height: 75px;
-        border: 3px solid $border-color;
-        border-radius: $border-radius-lg;
-        box-shadow: $box-shadow; 
+        border: 0px solid $border-color;
+        border-radius: 0;
+        box-shadow: 0; 
         background-color: var(--bs-white); 
         transition: box-shadow 500ms,transform 500ms,border 500ms;  
     }
