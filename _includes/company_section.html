@@ -1,10 +1,5 @@
 <div class="company-area pt-10 pt-lg-15">
     <div class="container">
-        {% if page.home == 1 %}
-        <div class="text-center">
-            <p class="fs-3 company-title text-secondary mb-4">Used by</p>
-        </div>
-        {% endif %}
         <div class="swiper-container company-slider">
             <div class="swiper-wrapper">
                 {% for partner in site.data.partners %}
