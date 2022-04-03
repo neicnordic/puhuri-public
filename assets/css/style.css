@@ -14977,6 +14977,39 @@ iframe {
 .header-navbar .navbar-reveal span:nth-child(2) {
   width: 18px;
 }
+.header-navbar .header-navbar-menu-inline {
+  position: relative;
+}
+.header-navbar .header-navbar-menu-inline ul {
+  display: flex;
+  margin-bottom: 0;
+  justify-content: end;
+  align-items: center;
+}
+.header-navbar .header-navbar-menu-inline ul li {
+  font-size: 1.2rem;
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  overflow: hidden;
+  margin: 0 20px;
+}
+.header-navbar .header-navbar-menu-inline ul li:last-child {
+  margin-right: 0;
+}
+.header-navbar .header-navbar-menu-inline ul li a {
+  color: var(--bs-primary);
+  background-image: linear-gradient(rgba(252, 248, 248, 0) calc(99% - 1px), var(--bs-primary) 1px);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s, color 0.5s, transform 0.5s;
+}
+.header-navbar .header-navbar-menu-inline ul li a.active {
+  color: var(--bs-dark);
+  background-image: none;
+}
+.header-navbar .header-navbar-menu-inline ul li a:hover {
+  background-size: 100% 100%;
+}
 
 .header-navbar-menu {
   overflow-y: auto;
@@ -16754,9 +16787,17 @@ iframe {
 /* ============================================== 
   Media Query : 1200px 
 ============================================== */
+@media only screen and (min-width: 1200px) {
+  .header-navbar .navbar-reveal {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .header-navbar {
     padding: 0 50px;
+  }
+  .header-navbar .header-navbar-menu-inline {
+    display: none;
   }
 
   .hero-image {

@@ -15,9 +15,20 @@
 /* ============================================== 
   Media Query : 1200px 
 ============================================== */
+@media only screen and (min-width:1200px) {
+  .header-navbar {
+    .navbar-reveal {
+      display: none;
+    }
+  }
+}
 @media only screen and (max-width:1200px) {
 .header-navbar {
   padding: 0 50px; 
+
+  .header-navbar-menu-inline {
+    display: none;
+  }
 }
 .hero-image{
   transform: none;

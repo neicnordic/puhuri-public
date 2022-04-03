@@ -40,6 +40,43 @@
             }
         } 
     }
+
+    .header-navbar-menu-inline {
+        position: relative;
+        ul {
+            display: flex;
+            margin-bottom: 0;
+            justify-content: end;
+            align-items: center;
+        }
+        ul li {
+            font-size: 1.2rem;
+            font-family: Manrope,sans-serif;
+            font-weight: 700;
+            overflow: hidden;
+            margin: 0 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: var(--bs-primary);
+                background-image: linear-gradient(rgba(252,248,248,0) calc(99% - 1px),var(--bs-primary) 1px);
+                background-repeat: no-repeat;
+                background-size: 0 100%;
+                transition: background-size .5s,color .5s,transform .5s;
+
+                &.active {
+                    color: var(--bs-dark);
+                    background-image: none;
+                }
+                &:hover {
+                    background-size: 100% 100%;
+                }
+            }
+        }
+    }
 }
 .header-navbar-menu{
     overflow-y: auto;

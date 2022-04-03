@@ -4,6 +4,30 @@
             <a class="navbar-brand" href="{{'/' | relative_url}}">
                 <img src="{{'/assets/images/header-brand.png' | relative_url}}" alt="images">
             </a>
+            <div class="header-navbar-menu-inline">
+                <nav>
+                    <ul class="nav-list list-inline">
+                        {% for link in site.data.navigation %}
+                        <li {% if link.submenu %} class="sub-dropdown" {% endif %}>
+                            <a href="{{link.url}}" {% if page.url contains link.url %}class="active"{% endif %}>
+                                {{link.text}}
+                            </a>
+                            {% if link.submenu %} 
+                            <ul class="sub-list list-inline">
+                                {% for sublink in link.submenu %}
+                                <li>
+                                    <a href="{{sublink.url}}" {% if page.url contains sublink.url %}class="active"{% endif %}>
+                                        {{sublink.text}}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
             <a href="#nav" class="navbar-reveal"><span></span><span></span><span></span></a>
         </div>
     </div>
