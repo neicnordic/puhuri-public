@@ -13,6 +13,15 @@ permalink: /architecture
     <section class="pt-7 pt-lg-9">
       <div class="container">
         <div class="row">
+          <div class="col-lg-8">
+            <p>Puhuri provides resource allocation and authentication infrastructure for service providers.</p>
+
+            <p>Puhuri AAI is part of MyAccessID authentication and authorisation infrastructure (AAI) services based on GEANT eduTEAMS. </p>
+            
+            <p>The diagram below summarises the architecture of the Puhuri consisting of two layers: <b>identity layer</b> and <b>Infrastructure Service Domain (ISD) layer</b>.</p>
+          </div>
+      </div>
+
             <div class="col-lg-8">
                 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-436 -829 1439 2149">
                     <defs>
@@ -684,6 +693,18 @@ permalink: /architecture
                   </svg>
                   
             </div>
+            <div class="col-lg-8">
+                  <p class="mt-3 mb-4">The <b>identity layer</b> is responsible for delivering consistent identity information across clients and services of Puhuri. The registration creates a unique identifier (Community Unique Identifier, CUID) for the user in MyAccessID registry, which is used for referencing and linking user identity across the different components. The user registration process can be started from the existing portal of Resource Allocators (e.g. national allocation portal) or from a Puhuri Portal, which is provided as a reference solution. Identity layer also assures that supported identity providers release the attributes about user identity in a common way so that services could be built with end-to-end user authentication.</p>
+
+                  <p class="mb-4">Users can optionally register SSH public keys with their MyAccessID profile, in which case they become available to the service providers that user gets access to.</p>
+                    
+                  <p class="mb-4">On the <b>Infrastructure Service Domain layer</b>, Puhuri Core, operated by University of Tartu, is the resource allocation service exposing API for <b>Resource Allocators</b> and <b>Service Providers</b> for managing Projects, Members (using CUID of Puhuri users as references) as well as passing information on Resource Allocations, their usage and lifecycle.</p>
+                    
+                    
+                  <p class="mb-4">The Puhuri services deal with personal data and have been analysed from the perspective of GDPR compliance. Required contracts have to be signed prior to access to the production environment of Puhuri Core.<p class="mb-4"></p>
+                    </p>
+            </div>
+    
         </div>
         </div>
     </section>
