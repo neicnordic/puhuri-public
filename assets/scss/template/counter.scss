@@ -1,0 +1,19 @@
+.counter-box{
+    .counter-icon{
+        img{
+            height: 64px;
+        }
+    }
+}
+.counter-area{
+    [class*="col"]{
+        .counter-box{
+            border-right: 1px solid $border-color;  
+        }
+        &:last-child{
+            .counter-box{
+                border-right: 0; 
+            }
+        }
+    } 
+}

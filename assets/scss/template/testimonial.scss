@@ -1,0 +1,95 @@
+.swiper-button-prev,
+.swiper-button-next{
+    width: 60px;
+    height: 60px;
+    border-radius: $border-radius-lg;
+    background-color: var(--bs-white);
+    box-shadow: $box-shadow-sm;
+    transition: background-color 500ms;
+    &::after{
+        content: url(../images/arrow-icon.svg); 
+        transition: filter 500ms;
+        display: inline-block;   
+        line-height: 0;
+    }
+    &.swiper-button-next{
+        padding: 10px 26px;
+        &::after{
+            transform: rotate(180deg);  
+        }
+    }
+    &:hover,&.swiper-button-disabled{
+        background-color: var(--bs-primary);
+        opacity: 1;
+        &::after{
+            filter: brightness(0) invert(1); 
+        }
+    }
+}
+.swiper-container{
+    .swiper-button-prev,
+    .swiper-button-next{
+        display: none; 
+    }
+    &:hover{
+        .swiper-button-prev,
+        .swiper-button-next{
+            display: flex; 
+        }
+    }
+}
+.testimonial-wrapper{
+    position: absolute;
+    max-width: 230px; 
+    .testimonial-arrow{
+        display: flex;
+        .swiper-button-prev,
+        .swiper-button-next{
+            position: relative;  
+            top: 0;  
+            left: 0;  
+            right: 0;  
+            margin-top: 0;  
+            margin-right: 24px;  
+        }
+    }
+}
+.testimonial-container{
+    overflow: hidden;
+}
+.testimonial-slider{ 
+    left: 50%; 
+    transform: translate(-200px,0px); 
+    z-index: 2;
+}
+.testimonial-box{
+    padding: 40px;
+    box-shadow: $box-shadow-sm;
+    border-radius: $border-radius;
+    background-color: var(--bs-white);   
+    margin: 30px 12px;  
+    min-height: 300px;
+    transition: box-shadow 500ms; 
+    .author-info{
+        display: flex;
+        align-items: center; 
+        img{
+            width: 75px;
+            height: 75px;
+            border-radius: $border-radius-lg; 
+            margin-right: 16px;
+        }
+    }
+    .review-rating{
+        img{
+            width: 28px;
+            height: 28px; 
+            padding: 4px; 
+            border-radius: $border-radius-lg;
+            border: 1px solid $border-color;
+        }
+    }
+    &:hover{
+        box-shadow: $box-shadow-lg; 
+    }
+}
