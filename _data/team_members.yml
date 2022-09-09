@@ -1,5 +1,5 @@
 - name: Jarno Laitinen 
-  designation: Head of Puhuri
+  designation: Application Expert
   img_src: /assets/images/team/jarno.webp
   social:
     - icon: '/assets/images/icons/linkedin.svg'
@@ -20,7 +20,7 @@
       url: https://www.linkedin.com/in/yefim-gasel/
 
 - name: Anders Sjöström 
-  designation: Application expert
+  designation: Head of Puhuri
   img_src: /assets/images/team/anders.webp
   social:
     - icon: '/assets/images/icons/linkedin.svg'
