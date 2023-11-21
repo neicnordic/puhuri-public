@@ -1,0 +1,86 @@
+.footer-widget{
+    .footer-logo{
+        display: block;
+        img{
+            height: 40px;
+        }
+    }
+    form{
+        input{
+            border-radius: $border-radius-lg !important; 
+        }
+    }
+}
+.share-link-social{  
+   li{ 
+       margin: 0!important;  
+       .pinterest{
+          background-color: $levert-pinterest;
+       } 
+       .facebook{
+          background-color:  $levert-facebook;
+       } 
+       .github{
+          background-color:  $levert-github;
+       } 
+       .linkedin{
+          background-color:  $levert-linkedin;
+       } 
+       .twitter{
+          background-color:  $levert-twitter;
+       } 
+    a{    
+      display: block;
+      width: 30px; 
+      height: 30px;  
+      margin: 2px; 
+      border-radius: $border-radius-lg;  
+      color: var(--bs-white); 
+      padding: 0px;    
+      text-align: center;  
+      transition: background-color 500ms, transform 500ms; 
+      &:hover{ 
+         transform: translate(1px,1px);
+      }
+    }
+   } 
+}
+.footer-list{
+    li{ 
+        a{ 
+            margin: 8px 0;
+            color:var(--bs-secondary); 
+            display: inline-block;
+            background-image: $gradient;
+            background-repeat: no-repeat;
+            background-size: 0% 100%;
+            transition: background-size 500ms;
+            &:hover {
+                color: var(--bs-primary); 
+                background-size: 100% 100%;  
+            }
+        }
+    }
+}
+.footer-back{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:var(--bs-primary);
+    color:$white; 
+    display:block;
+    right:30px;
+    bottom:30px;
+     position:fixed; 
+     text-align: center;
+      padding: 5px 0; 
+      display:none; 
+      z-index: 111; 
+      transition: background-color 300ms ease-out;
+      &.show{
+        display:block; 
+      } 
+      &:hover {
+        background-color: var(--bs-dark);  
+      }
+}
