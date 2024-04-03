@@ -2,10 +2,6 @@
   designation: Application Expert
   img_src: /assets/images/team/jarno.webp
 
-- name: Marina Adomeit
-  designation: AAI Manager
-  img_src: 
-
 - name: Anders Sjöström 
   designation: Head of Puhuri
   img_src: /assets/images/team/anders.webp
@@ -13,7 +9,3 @@
 - name: Anne Vomm Kime 
   designation: Support coordinator
   img_src: /assets/images/team/anne.webp
-
-- name: Ilja Livenson
-  designation: Development Manager
-  img_src: 
