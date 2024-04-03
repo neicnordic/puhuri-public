@@ -1,11 +1,31 @@
-- name: Jarno Laitinen 
-  designation: Application Expert
-  img_src: /assets/images/team/jarno.webp
-
 - name: Anders Sjöström 
   designation: Head of Puhuri
   img_src: /assets/images/team/anders.webp
+  social:
+    - icon: '/assets/images/icons/linkedin.svg'
+      url: https://www.linkedin.com/in/anders-sj%C3%B6str%C3%B6m/
+
+- name: Ilja Livenson 
+  designation: Development Manager
+  img_src: /assets/images/team/ilja.webp
+  social:
+    - icon: '/assets/images/icons/linkedin.svg'
+      url: https://www.linkedin.com/in/livenson/
+
+- name: Jarno Laitinen 
+  designation: Stakeholder Manager
+  img_src: /assets/images/team/jarno.webp
+  social:
+    - icon: '/assets/images/icons/linkedin.svg'
+      url: https://www.linkedin.com/in/jarno-laitinen-1b67512/
+
+- name: Marina Adomeit 
+  designation: AAI Manager
+  img_src: /assets/images/team/marina.webp
 
 - name: Anne Vomm Kime 
   designation: Support coordinator
   img_src: /assets/images/team/anne.webp
+  social:
+    - icon: '/assets/images/icons/linkedin.svg'
+      url: https://www.linkedin.com/in/annevomm/
