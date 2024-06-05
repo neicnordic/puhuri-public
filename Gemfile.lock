@@ -1,4 +1,4 @@
 GEM
   remote: https://rubygems.org
   specs:
-    ffi (.16.3)
+    ffi (1.16.3)
