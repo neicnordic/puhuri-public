@@ -1,2 +1,4 @@
-Source “https://rubygems.org”
-gem “ffi”, “= 1.16.3”
+GEM
+  remote: https://rubygems.org
+  specs:
+    ffi (.16.3)
