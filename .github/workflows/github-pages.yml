@@ -32,6 +32,20 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: jekyll-build
+    permissions:
+      actions: read
+      checks: read
+      contents: read
+      deployments: write
+      id-token: read
+      issues: read
+      discussions: read
+      packages: read
+      pages: write
+      pull-requests: read
+      repository-projects: read
+      security-events: read
+      statuses: read
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
