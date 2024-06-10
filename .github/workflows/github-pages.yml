@@ -45,6 +45,7 @@ jobs:
       repository-projects: read
       security-events: read
       statuses: read
+      id-token: write
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
