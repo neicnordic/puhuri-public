@@ -16,22 +16,26 @@ permalink: /contact
         <div class="col-lg-4 offset-xl-1 order-lg-1">
           <div class="contact-form bg-white mb-4 mb-lg-0" data-aos="fade-left">
 
-          <form action="https://formspree.io/f/mzzbzenv" method="POST">
-            <label>
-              Your name:
-              <textarea name="Name"></textarea>
-            </label>
-            <label>
-              Your email:
-              <input type="email" name="Email">
-            </label>
-            <label>
-              Your message:
-              <textarea name="Message"></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button type="submit">Send the message</button>
-          </form>
+            <form action="https://formspree.io/f/mzzbzenv" method="POST">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Name..">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input type="email" namme="email" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <textarea name="message" class="form-control" rows="4" placeholder="Message"></textarea>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-danger w-100">Send the message</button>
+            </form>
           </div>
         </div>
         <div class="col-lg-7 order-lg-12">
